@@ -1,0 +1,76 @@
+.currency-converter h1 {
+  color: #FFFFFF;
+}
+
+.currency-converter-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.currency-converter-result {
+  margin-top: 50px;
+  color: #FFFFFF;
+}
+
+.currency-converter-result p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.currency-converter-amount {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.currency-converter-error {
+  display: block;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.currency-converter-amount p {
+  display: block;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.currency-converter-swap {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 650px) {
+  .currency-converter-wrapper {
+    width: 600px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .currency-converter-wrapper {
+    width: 600px;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .currency-converter-swap {
+    margin-top: 30px;
+  }
+
+  .currency-converter-swap {
+    transform: initial;
+  }
+}
